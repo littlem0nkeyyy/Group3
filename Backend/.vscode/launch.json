@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WebTreeShopApplication<WebTreeShop>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "Group3.WebTreeShop.WebTreeShopApplication",
+            "projectName": "WebTreeShop",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-WebTreeShopApplication<WebTreeShop>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "Group3.WebTreeShopApplication",
+            "projectName": "WebTreeShop",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

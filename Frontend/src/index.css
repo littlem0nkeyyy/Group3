@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 12vh;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+}
+
+/* Navigation list */
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+/* Menu items */
+.navbar ul li {
+  padding: 10px 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navbar ul li:hover {
+  background-color: #f2f2f2;
+  color: #00cc44;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background-color: white;
+  border-radius: 12px;
+  min-width: 120px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown buttons */
+.dropdown-content button {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 10px 14px;
+  text-align: left;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content button:hover {
+  background-color: #f7f7f7;
+  color: #00cc44;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    top: 42px;
+    right: 10px;
+  }
+}
